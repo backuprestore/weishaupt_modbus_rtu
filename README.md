@@ -116,7 +116,7 @@ data reg 75 = 00 00 -> not used
 
 data reg 76 = 00 00 -> not used
 
-data reg 77 = 04 6D -> Sensor2 -> 1133/(2^5) = 35.4 °C
+data reg 77 = 04 6D -> Sensor2 -> 1133/(2^5) = 35.4 °C ----> DRUCKGAS-Temperatur
 
 CRC = 04 1B
 
