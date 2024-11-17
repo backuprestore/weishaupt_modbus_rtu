@@ -72,7 +72,7 @@ CRC = 72 66
 
 Answer
 
-2D;03;26;00;01;17;DA;0F;6A;46;00;00;00;20;DA;19;0B;02;58;06;4E;07;B5;00;00;04;6F;04;6F;04;6F;00;00;00;00;00;00;00;00;04;6D;04;1B
+2D; 03; 26; 00;01; 17;DA; 0F;6A; 46;00; 00;00; 20;DA; 19;0B; 02;58; 06;4E; 07;B5; 00;00; 04;6F; 04;6F; 04;6F; 00;00; 00;00; 00;00; 00;00; 04;6D; 04;1B
 
 ID = 2D
 
@@ -82,39 +82,41 @@ quantity of bytes = 26 -> 38 bytes = 2x 19 registers
 
 data reg 59 = 00 01 -> Power Up Status -> 1 = complete
 
-data reg 60 = 17 DA -> Compressor Running Speed -> 6001 rpm
+data reg 60 = 17 DA -> Compressor Running Speed -> 6106/(2^1) = 3053 rpm
 
-data reg ?? = 0F 6A
+data reg 61 = 0F 6A -> Torque [Nm] -> 3946/(2^9) = 7.7 Nm (or current)
 
-data reg ?? = 46 00
+data reg 62 = 46 00 -> Torque Limit -> 17920/(2^9) = 35Nm (or current limit)
 
-data reg ?? = 00 00
+data reg 63 = 00 00 -> not used
 
-data reg ?? = 20 DA
+data reg 64 = 20 DA -> DC Bus Voltage [V] -> 8410/(2^4) = 525.6 Volts ?????
 
-data reg ?? = 19 0B
+data reg 65 = 19 0B -> AC Input Voltage [V] -> 6411/(2^4) = 400.6V
 
-data reg ?? = 02 58
+data reg 66 = 02 58 -> AC Input Current [A] -> 600/(2^8) = 2.34A
 
-data reg ?? = 06 4E
+data reg 67 = 06 4E -> AC Input Power [W] -> 1614 /(2^0) = 1614W
 
-data reg ?? = 07 B5
+data reg 68 = 07 B5 -> compressor phase current [A] -> 1973/(2^8) = 7,7A
 
-data reg ?? = 00 00
+data reg 69 = 00 00 -> not used
 
-data reg ?? = 04 6F
+data reg 70 = 04 6F -> Power Module Temp [°C] > 1135/(2^5) = 35.4°C
 
-data reg ?? = 04 6F
+data reg 71 = 04 6F -> unknown
 
-data reg ?? = 04 6F
+data reg 72 = 04 6F -> unknown
 
-data reg ?? = 00 00
+data reg 73 = 00 00 ->  -> not used (IGBT Temp????)
 
-data reg ?? = 00 00
+data reg 74 = 00 00 -> not used
 
-data reg ?? = 00 00
+data reg 75 = 00 00 -> not used
 
-data reg ?? = 04 6D
+data reg 76 = 00 00 -> not used
+
+data reg 77 = 04 6D -> Sensor2 -> 1133/(2^5) = 35.4 °C
 
 CRC = 04 1B
 
