@@ -53,7 +53,7 @@ CRC = 00 71
 
 --------------------------------------
 
-Communication Example for EVB2080M-K9
+Communication Example for EV2080M-K9
 
 Request
 
