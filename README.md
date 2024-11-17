@@ -9,20 +9,32 @@ RS485 19200/8/1/Even
 --------------------------------------
 
 devices:
+
 ID; Command; ......
+
 ID=01 something like Emerson EXD-HP1/2 -documentation TI_EXD-HP12_A1_A2L_A3_DE_Rev03
+
 ID=2D Emerson EV2080M-K9 - documentation AE8-1405 R2
 
 --------------------------------------
 Commmunikation Example for EXP-HP1/2
+
 Request
+
 01;10;02;00;00;01;02;00;15;44;5F
+
 ID = 01
+
 function code = 10 -> write data (multiple registers)
+
 start register adress = 02 00 -> "Handbetrieb Regelkreis 1"
+
 quantity of registers = 00 01 -> one register
+
 amount of bytes = 02 -> two bytes
+
 data = 00 15 = not sure
+
 CTC = 44 5F
 
 Answer
