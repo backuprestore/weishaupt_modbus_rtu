@@ -14,7 +14,7 @@ ID; Command; ......
 
 ID=01 something like Emerson EXD-HP1/2 -documentation TI_EXD-HP12_A1_A2L_A3_DE_Rev03
 
-ID=2D Emerson EV2080M-K9 - documentation AE8-1405 R2
+ID=2D Emerson EV2080M-K9 - documentation AE8-1411 R3 or AE8-1405 R2 
 
 --------------------------------------
 Commmunikation Example for EXP-HP1/2
